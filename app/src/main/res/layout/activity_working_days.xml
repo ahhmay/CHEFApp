@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addfooditem.WorkingDays">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chef"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/addRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Operating Time"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <TimePicker
+            android:id="@+id/startTime"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_button_teal"
+            android:timePickerMode="spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/endTime"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/endTime_tv"
+            app:layout_constraintTop_toBottomOf="@+id/endTime"
+            app:layout_constraintVertical_bias="0.307"
+            tools:ignore="MissingConstraints" />
+
+        <TimePicker
+            android:id="@+id/endTime"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_button_teal"
+            android:timePickerMode="spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addRestaurant"
+            app:layout_constraintVertical_bias="0.176"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/startTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Start Time"
+            android:textColor="@color/dark_grey"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/endTime"
+            app:layout_constraintStart_toStartOf="@+id/endTime"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/endTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Close Time"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/startTime"
+            app:layout_constraintStart_toStartOf="@+id/endTime"
+            app:layout_constraintTop_toBottomOf="@+id/endTime"
+            app:layout_constraintVertical_bias="0.903"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/proceedBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/border_button_teal"
+            android:text="PROCEED"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/startTime"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/startTime"
+            app:layout_constraintTop_toBottomOf="@+id/startTime"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/start_ed"
+            android:layout_width="113dp"
+            android:layout_height="22dp"
+            android:ems="10"
+            android:visibility="invisible"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/end_ed"
+            android:layout_width="143dp"
+            android:layout_height="23dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="709dp"
+            tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

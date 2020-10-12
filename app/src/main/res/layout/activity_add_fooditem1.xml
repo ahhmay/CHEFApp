@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addfooditem.AddFoodItem1">
+
+
+    <!--    <EditText-->
+<!--        android:id="@+id/foodPrice3"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:backgroundTint="@color/colorAccent"-->
+<!--        android:drawableRight="@drawable/v_price"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Food Price"-->
+<!--        android:inputType="number"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/foodType3"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/foodType3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/foodType3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <EditText-->
+<!--        android:id="@+id/portionSize3"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="32dp"-->
+<!--        android:backgroundTint="@color/colorAccent"-->
+<!--        android:drawableRight="@drawable/v_portionsize"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Portion Size(in plates)"-->
+<!--        android:inputType="number"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/foodCategory3"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/foodCategory3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/foodCategory3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/foodName3"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:backgroundTint="@color/colorAccent"-->
+<!--        android:drawableRight="@drawable/v_food_name"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Food Name"-->
+<!--        android:inputType="text"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/foodItem3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/foodType3"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:backgroundTint="@color/colorAccent"-->
+<!--        android:drawableRight="@drawable/veg_logo"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Food Type"-->
+<!--        android:inputType="text"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/foodName3"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/foodName3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/foodName3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <Button
+        android:id="@+id/proceedButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="108dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="PROCEED"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portionSize3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chef"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/addFoodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Add Cuisines"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addMoreButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:background="@color/green"
+        android:drawableLeft="@drawable/v_add"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="ADD"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/proceedButton"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/proceedButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/foodType3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableRight="@drawable/veg_logo"
+        android:ems="10"
+        android:hint="Food Type"
+        android:inputType="text"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/foodName3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodName3"
+        app:layout_constraintTop_toBottomOf="@+id/foodName3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/foodName3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableRight="@drawable/v_food_name"
+        android:ems="10"
+        android:hint="Food Name"
+        android:inputType="text"
+        android:paddingRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/foodCategory3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableRight="@drawable/v_category"
+        android:ems="10"
+        android:hint="Food Category"
+        android:inputType="text"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/foodType3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodType3"
+        app:layout_constraintTop_toBottomOf="@+id/foodType3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/foodPrice3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableRight="@drawable/v_price"
+        android:ems="10"
+        android:hint="Food Price"
+        android:inputType="number"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/foodCategory3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodCategory3"
+        app:layout_constraintTop_toBottomOf="@+id/foodCategory3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/portionSize3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableRight="@drawable/v_portionsize"
+        android:ems="10"
+        android:hint="Portion Size(in plates)"
+        android:inputType="number"
+        android:paddingRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/foodPrice3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodPrice3"
+        app:layout_constraintTop_toBottomOf="@+id/foodPrice3"
+        app:layout_constraintVertical_bias="0.005"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/border_button"
+        android:text="RESET"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proceedButton"
+        app:layout_constraintVertical_bias="0.35"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

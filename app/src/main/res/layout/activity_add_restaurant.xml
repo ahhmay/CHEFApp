@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRestaurant">
+
+
+    <Button
+        android:id="@+id/goOnline"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:text="PROCEED"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/resTime"
+        app:layout_constraintTop_toBottomOf="@+id/resTime"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <EditText
+        android:id="@+id/restaurantName"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Restaurant Name"
+        android:inputType="textCapCharacters"
+        android:drawableRight="@drawable/v_restaurant"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRestaurant"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/restaurantAddress"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Restaurant Address"
+        android:inputType="text"
+        android:drawableRight="@drawable/v_location"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantName"
+        app:layout_constraintStart_toStartOf="@+id/restaurantName"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
+
+    <EditText
+        android:id="@+id/resType"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Restaurant Type"
+        android:inputType="text"
+        android:drawableRight="@drawable/veg_logo"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantAddress"
+        app:layout_constraintStart_toStartOf="@+id/restaurantAddress"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantAddress" />
+
+    <EditText
+        android:id="@+id/restaurantPhone"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:drawableRight="@drawable/v_phone"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/resType"
+        app:layout_constraintStart_toStartOf="@+id/resType"
+        app:layout_constraintTop_toBottomOf="@+id/resType" />
+
+    <EditText
+        android:id="@+id/restaurantEmail"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/v_email"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantPhone"
+        app:layout_constraintStart_toStartOf="@+id/restaurantPhone"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantPhone" />
+
+    <EditText
+        android:id="@+id/resTime"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Timing"
+        android:inputType="time"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableRight="@drawable/v_time"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantEmail"
+        app:layout_constraintStart_toStartOf="@+id/restaurantEmail"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantEmail"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chef"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/addRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Basic Details"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
